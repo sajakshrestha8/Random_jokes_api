@@ -1,5 +1,3 @@
-
-
 const express = require('express');
 const app = express();
 const swaggerDocs = require("./swagger");
@@ -47,12 +45,12 @@ app.use(express.json());
 /**
  * @swagger
  * /jokes:
- *  get:
- *      summary: This is to test the get method of my api
- *      description: Yesma multiple joke herna milxa hai
- *      responses:
- *          200:
- *              description: Yesma multiple joke herna milxa hai
+ *   get:
+ *     summary: La herama yesma multiple jokes ko kamal. Hasam sabai sangai basera
+ *     description: Yesma vane hajur le multiple joke haru herna saknu hunxa
+ *     responses:
+ *       200:
+ *         description: jokes ko list xa hai tala
  */
 
 app.get("/jokes", (req,res)=>{
@@ -63,7 +61,7 @@ app.get("/jokes", (req,res)=>{
  * @swagger
  * /joke:
  *  get:
- *      summary: This is to test the get method of my api
+ *      summary: Din ma yeuta joke herna man xa? La aaunu ma dekhauxu tapailai din ma yeuta joke tyo ni regularly
  *      description: Yesma yeuta joke matrai herna milxa hai 
  *      responses:
  *          200:

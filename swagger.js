@@ -5,11 +5,9 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Mini Blog API',
+      title: 'Daily Random jokess',
       description: 'APIs for random jokes to post and view ',
       contact: {
-        name: 'Random jokes Api',
-        email: 'info@miniblog.com',
         url: 'https://github.com/DesmondSanctity/node-js-swagger',
       },
       version: '1.0.0',
