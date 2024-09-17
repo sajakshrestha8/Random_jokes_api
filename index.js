@@ -7,40 +7,55 @@ const port = 8000;
 
 let jokes = [
   {
-    joke: "Why don't skeletons fight each other? They don't have the guts.",
+    setup: "Why don't skeletons fight each other?",
+    punchline: "They don't have the guts!",
   },
   {
-    joke: "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+    setup: "What do you call fake spaghetti?",
+    punchline: "An impasta!",
   },
   {
-    joke: "Why don't scientists trust atoms? Because they make up everything!",
+    setup: "Why did the scarecrow win an award?",
+    punchline: "Because he was outstanding in his field!",
   },
   {
-    joke: "What do you call fake spaghetti? An impasta!",
+    setup: "Why can't your nose be 12 inches long?",
+    punchline: "Because then it would be a foot!",
   },
   {
-    joke: "What did the grape do when it got stepped on? Nothing but let out a little wine.",
+    setup: "What do you call a fish with no eyes?",
+    punchline: "Fsh.",
   },
   {
-    joke: "Why did the scarecrow win an award? Because he was outstanding in his field!",
+    setup: "Why don’t eggs tell jokes?",
+    punchline: "They’d crack each other up.",
   },
   {
-    joke: "I'm reading a book on anti-gravity. It's impossible to put down!",
+    setup: "What did the ocean say to the shore?",
+    punchline: "Nothing, it just waved.",
   },
   {
-    joke: "Did you hear about the mathematician who’s afraid of negative numbers? He’ll stop at nothing to avoid them.",
+    setup: "Why did the golfer bring two pairs of pants?",
+    punchline: "In case he got a hole in one.",
   },
   {
-    joke: "Parallel lines have so much in common. It’s a shame they’ll never meet.",
+    setup: "What do you call a factory that makes okay products?",
+    punchline: "A satisfactory.",
   },
   {
-    joke: "What’s orange and sounds like a parrot? A carrot.",
+    setup: "Why did the bicycle fall over?",
+    punchline: "Because it was two-tired!",
   },
 ];
 
+app.use(express.static("public"));
 app.use(express.json());
 
 app.set("view engine", "ejs");
+
+app.get("/", (req, res) => {
+  res.render("home");
+});
 
 /**
  * @swagger
@@ -54,7 +69,7 @@ app.set("view engine", "ejs");
  */
 
 app.get("/jokes", (req, res) => {
-  res.render("index", { jokes });
+  res.render("jokes", { jokes });
 });
 
 /**
