@@ -1,9 +1,9 @@
 <h1>How to setup this project</h1>
-- npm init -y
-- npm i express
-- npm i nodemon
-- npm i ejs
-- npm i swagger-cli
+- npm init -y </br>
+- npm i express </br>
+- npm i nodemon </br>
+- npm i ejs </br>
+- npm i swagger-cli </br>
 
 <h1>How to run this project</h1>
 - npm run start
