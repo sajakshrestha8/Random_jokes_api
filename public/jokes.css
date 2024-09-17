@@ -1,9 +1,14 @@
 .jokes-card{
-    background-color: rgb(169, 159, 159);
+    background-color: #e5e5e5;
     padding: 40px;
     border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.jokes-card:hover{
+    background-color: #f4f4f4;
+    border: 1px solid rgb(199, 198, 198);
 }
 
 h1{

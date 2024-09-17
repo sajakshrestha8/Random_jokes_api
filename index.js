@@ -86,7 +86,7 @@ app.get("/jokes", (req, res) => {
 app.get("/joke", (req, res) => {
   let randomIndex = Math.floor(Math.random() * jokes.length);
   let randomJoke = jokes[randomIndex];
-  res.send(randomJoke);
+  res.render("joke", { randomJoke });
 });
 
 /**

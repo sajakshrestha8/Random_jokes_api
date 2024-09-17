@@ -8,6 +8,7 @@
 </head>
 <body>
     <a href="/">Home</a>
+    <a href="/joke">Joke</a>
     <h1>Welcome to the Jokes Section</h1>
         <div class="joke-card-grid">
             <% for(let i=0; i<jokes.length; i++){ %>
@@ -16,12 +17,10 @@
                     <label>Joke <%= i+1 %></label>
                 </div>
                 <div class="jokes-card">
-                <li>
-                    <label><b>SetUp: </b></label>
+                    <label><b>Setup: </b></label>
                         <%= jokes[i].setup %><br>
-                        <label>--- </label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label> --- </label>
                         <%= jokes[i].punchline %>
-                    </li>
                </div>
             </div>
             <% } %>

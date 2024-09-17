@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/joke.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/" class="link">Home</a>
+    <a href="/jokes" class="link">Jokes</a>
+    <h1>Any Random jokes</h1>
+    <div class="joke-card">
+        <label><b>Setup: </b></label>
+        <%= randomJoke.setup %>
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label> --- </label>
+    <%= randomJoke.punchline %>
+    </div>
+    <div class="button">
+        <button onclick="refresh()">Change Joke</button>
+    </div>
+
+
+    <script>
+        function refresh(){
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>

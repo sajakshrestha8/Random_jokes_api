@@ -1,0 +1,31 @@
+.joke-card{
+    background-color: #e5e5e5;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 5px;
+    width: 30rem;
+}
+
+h1{
+    margin-left: 10px;
+}
+
+.joke-card:hover{
+    background-color: #f2f2f2;
+    border: 0.5px solid rgb(198, 198, 198);
+}
+
+.button{
+    margin-left: 8px;
+}
+
+button{
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #e5e5e5;
+    border: 0.5px solid rgb(216, 215, 215);
+}
+
+.link{
+    text-decoration: none;
+}
