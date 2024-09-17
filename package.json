@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "express": "^4.19.2",
+    "ejs": "^3.1.10",
+    "express": "^4.20.0",
     "nodemon": "^3.1.4"
   },
   "name": "random_joke_api",
@@ -12,9 +13,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
-  }
+  },
+  "description": ""
 }
