@@ -48,6 +48,7 @@ let jokes = [
   },
 ];
 
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(express.json());
 
@@ -100,11 +101,13 @@ app.get("/joke", (req, res) => {
  *              description: Yesma Yeuta Joke matrai herna milxa hai
  */
 app.post("/addjokes", (req, res) => {
-  let payload = req.body;
+  let { setup, punchline } = req.body;
   jokes.push({
-    joke: payload.joke,
+    setup: setup,
+    punchline: punchline,
   });
-  res.send(jokes);
+  res.render("addjoke", { jokes });
+  console.log(setup, punchline);
 });
 
 app.listen(port, () => {
