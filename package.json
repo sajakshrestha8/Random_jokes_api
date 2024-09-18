@@ -10,6 +10,10 @@
   "scripts": {
     "start": "node index.js"
   },
+  "files": [
+    "views",
+    "public"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
