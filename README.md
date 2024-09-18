@@ -1,3 +1,13 @@
+<h1>How to setup this project</h1>
+- npm init -y </br>
+- npm i express </br>
+- npm i nodemon </br>
+- npm i ejs </br>
+- npm i swagger-cli </br>
+
+<h1>How to run this project</h1>
+- npm run start
+
 <h1>Random Jokes API</h1>
 It is a project that provides three API for the random jokes where
 1. One API provides all the Jokes stored
@@ -6,6 +16,9 @@ It is a project that provides three API for the random jokes where
 
 <h2>Swagger UI</h2>
 - I used Swagger UI in my project to provide a API documentation which may help other developers to access my API easily without any issue regading the API 
+
+You can access the Swagger UI docs on the URL below after stating the server
+- localhost:8000/docs
 
 <h2>Vercel</h2>
 - I used vercel to deploy the nodeJS project.
